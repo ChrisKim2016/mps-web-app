@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke Generator</title>
+    <link rel="stylesheet" href="joke-styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">🎭 Joke Generator</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="joke-generator.html">Joke Generator</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container joke-container">
+        <div class="joke-box">
+            <h1>Random Joke Generator</h1>
+            <p class="subtitle">Get a laugh with random jokes from the internet!</p>
+
+            <!-- Joke Display -->
+            <div class="joke-display">
+                <div id="jokeContent" class="joke-content">
+                    <p>Click the button below to get a random joke!</p>
+                </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="button-group">
+                <button id="getJokeBtn" class="btn btn-primary">Get Random Joke</button>
+                <button id="nextJokeBtn" class="btn btn-secondary">Next Joke</button>
+            </div>
+
+            <!-- Loading Indicator -->
+            <div id="loading" class="loading hidden">
+                <div class="spinner"></div>
+                <p>Loading joke...</p>
+            </div>
+
+            <!-- Error Message -->
+            <div id="errorMsg" class="error hidden"></div>
+
+            <!-- Joke History -->
+            <div class="joke-history">
+                <h2>Recent Jokes</h2>
+                <div id="jokeHistory" class="history-list">
+                    <p class="empty-state">No jokes yet. Generate one to get started!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 MPS Web App - Joke Generator</p>
+            <p>Jokes from <a href="https://official-joke-api.appspot.com" target="_blank">Official Joke API</a></p>
+        </div>
+    </footer>
+
+    <script src="joke-generator.js"></script>
+</body>
+</html>
